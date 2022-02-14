@@ -38,3 +38,5 @@ For PS2 only need add .iso backups on DVD folder.
 For psx you will need psxvcd for make all .bin or .cue files into .vcd files and put on POPS folder.
 
 For download game cover,disc, and screen-shots (batch and per game) you will need OPL Manager.
+
+POPS Files must be edited with your ip and drop all files in your POPS folder
