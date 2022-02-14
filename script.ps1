@@ -1,5 +1,4 @@
 #Requires -RunAsAdministrator
-
 #Enable SMB 1.0
 
 Start-Process -FilePath powershell.exe -ArgumentList {
@@ -12,4 +11,12 @@ Start-Process -FilePath powershell.exe -ArgumentList {
     ForEach-Object {
         New-Item (Join-Path './ps2smb' $_) -ItemType Directory -force
     }
+
+$everyoneSID = [System.Security.Principal.SecurityIdentifier]::new('S-1-1-0')
+$everyoneName = $everyoneSID.Translate([System.Security.Principal.NTAccount]).Value
+
+Get-ChildItem .\ -Directory |ForEach-Object {
+    New-SmbShare -Name $_.Name -Path $_.FullName -FullAccess $everyoneName
+    }
+
 
