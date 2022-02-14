@@ -1,0 +1,10 @@
+#Enable SMB 1.0
+Enable-WindowsOptionalFeature -Online -FeatureName SMB1Protocol
+
+#Create dir
+
+@('APPS', 'ART', 'CD', 'CFG', 'CHT', 'DVD', 'LNG', 'POPS', 'THM', 'VMC') |
+    ForEach-Object {
+        New-Item (Join-Path './ps2smb' $_) -ItemType Directory -force
+    }
+
