@@ -1,6 +1,6 @@
 # PS2-SMB
 
-This is a simple script that will configure a samba server with the folders to simply add our game backups and forget about configuring the server part
+This is a simple script that will configure a samba server with the folders to simply add our game backups and forget about configuring the server part (WIP)
 
 # Why this project?
 
