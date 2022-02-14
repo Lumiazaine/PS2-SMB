@@ -34,5 +34,7 @@ just execute .exe file and only need take your ip for configure on your ps2.
 # Add ps2 and psx backups
 
 For PS2 only need add .iso backups on DVD folder.
+
 For psx you will need psxvcd for make all .bin or .cue files into .vcd files and put on POPS folder.
+
 For download game cover,disc, and screen-shots (batch and per game) you will need OPL Manager.
